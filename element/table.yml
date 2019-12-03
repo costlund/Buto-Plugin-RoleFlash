@@ -1,0 +1,15 @@
+type: widget
+data:
+  plugin: wf/table
+  method: render_many
+  data:
+    i18nzzz: false
+    rs: rs:data
+    field:
+      name: Name
+      description: Description
+      has_role: Assigned
+    datatable:
+      disabled: true
+    class:
+      table: table-sm table-striped table-hover
