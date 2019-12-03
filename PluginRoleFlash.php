@@ -31,9 +31,11 @@ class PluginRoleFlash{
     /**
      * Add extra roles not registrated.
      */
-    foreach (wfUser::getSession()->get('role') as $value) {
-      if(!array_key_exists($value, $roles)){
-        $roles[$value] = array('name' => $value, 'description' => '(not registrated)', 'has_role' => 'Yes');
+    if(wfUser::getSession()->get('role')){
+      foreach (wfUser::getSession()->get('role') as $value) {
+        if(!array_key_exists($value, $roles)){
+          $roles[$value] = array('name' => $value, 'description' => '(not registrated)', 'has_role' => 'Yes');
+        }
       }
     }
     /**
