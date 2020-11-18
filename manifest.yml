@@ -7,10 +7,10 @@ history:
 plugin:
   -
     name: wf/yml
-    version: '1.2'
+    version: 1.2.2
   -
     name: wf/table
-    version: '1.12'
+    version: 1.20.0
 sys:
   -
     name: mercury
