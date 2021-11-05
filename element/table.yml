@@ -3,7 +3,8 @@ data:
   plugin: wf/table
   method: render_many
   data:
-    i18nzzz: false
+    i18n: false
+    i18n_columns: true
     rs: rs:data
     field:
       name: Name
@@ -13,3 +14,9 @@ data:
       disabled: true
     class:
       table: table-sm table-striped table-hover
+    table:
+      settings:
+        globals:
+          -
+            path_to_key: 'settings/plugin/i18n/translate_v1/settings/path'
+            value: '/plugin/role/flash/i18n'

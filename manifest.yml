@@ -1,5 +1,9 @@
-version: 1.0.3
+version: 1.0.4
 history:
+  1.0.4:
+    date: '2021-11-05'
+    title: I18N
+    description: 'Add own translation.'
   1.0.3:
     date: '2021-09-27'
     title: Versions
